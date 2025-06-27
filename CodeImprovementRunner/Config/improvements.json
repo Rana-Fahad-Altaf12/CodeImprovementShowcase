@@ -1,0 +1,62 @@
+[
+  {
+    "Id": "01",
+    "Title": "Singleton vs Scoped DbContext",
+    "Bad": "Improvements._01_DbContextLifetime.Bad.SingletonDbContextExample",
+    "Good": "Improvements._01_DbContextLifetime.Good.ScopedDbContextExample"
+  },
+  {
+    "Id": "02",
+    "Title": "IEnumerable vs IQueryable",
+    "Bad": "Improvements._02_IEnumerableVsIQueryable.Bad.IEnumerableExample",
+    "Good": "Improvements._02_IEnumerableVsIQueryable.Good.IQueryableExample"
+  },
+  {
+    "Id": "03",
+    "Title": "Any vs FirstOrDefault",
+    "Bad": "Improvements._03_AnyVsFirstOrDefault.Bad.FirstOrDefaultExample",
+    "Good": "Improvements._03_AnyVsFirstOrDefault.Good.AnyExample"
+  },
+  {
+    "Id": "04",
+    "Title": "Result vs Await",
+    "Bad": "Improvements._04_ResultVsAwait.Bad.BlockingExample",
+    "Good": "Improvements._04_ResultVsAwait.Good.AwaitExample"
+  },
+  {
+    "Id": "05",
+    "Title": "Multiple .ToList() calls vs Chained LINQ",
+    "Bad": "Improvements._05_MultipleToListCalls.Bad.MultiToListExample",
+    "Good": "Improvements._05_MultipleToListCalls.Good.ChainedLinqExample"
+  },
+  {
+    "Id": "06",
+    "Title": "Unnecessary Select projection vs Direct property access",
+    "Bad": "Improvements._06_UnnecessarySelectVsDirectUse.Bad.UnnecessarySelectExample",
+    "Good": "Improvements._06_UnnecessarySelectVsDirectUse.Good.DirectAccessExample"
+  },
+  {
+    "Id": "07",
+    "Title": "Multiple OR conditions vs .Contains() in LINQ",
+    "Bad": "Improvements._07_OrConditionsVsContains.Bad.OrConditionsExample",
+    "Good": "Improvements._07_OrConditionsVsContains.Good.ContainsExample"
+  },
+  {
+    "Id": "08",
+    "Title": "Count() > 0 vs Any() for existence check",
+    "Bad": "Improvements._08_CountVsAny.Bad.CountCheckExample",
+    "Good": "Improvements._08_CountVsAny.Good.AnyCheckExample"
+  },
+  {
+    "Id": "09",
+    "Title": "FirstOrDefault vs Any() for existence check",
+    "Bad": "Improvements._09_FirstOrDefaultVsAny.Bad.FirstOrDefaultCheckExample",
+    "Good": "Improvements._09_FirstOrDefaultVsAny.Good.AnyCheckExample"
+  },
+  {
+    "Id": "10",
+    "Title": "ToList() before filtering vs after filtering",
+    "Bad": "Improvements._10_ToListBeforeVsAfterFilter.Bad.PrematureToListExample",
+    "Good": "Improvements._10_ToListBeforeVsAfterFilter.Good.DeferredToListExample"
+  }
+]

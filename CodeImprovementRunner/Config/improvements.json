@@ -58,5 +58,66 @@
     "Title": "ToList() before filtering vs after filtering",
     "Bad": "Improvements._10_ToListBeforeVsAfterFilter.Bad.PrematureToListExample",
     "Good": "Improvements._10_ToListBeforeVsAfterFilter.Good.DeferredToListExample"
+  },
+  {
+    "Id": "11",
+    "Title": "Use StringBuilder instead of string concatenation",
+    "Bad": "Improvements._11_StringBuilderVsStringConcat.Bad.StringConcatExample",
+    "Good": "Improvements._11_StringBuilderVsStringConcat.Good.StringBuilderExample"
+  },
+  {
+    "Id": "12",
+    "Title": "Avoid Where().FirstOrDefault() – Use FirstOrDefault(predicate)",
+    "Bad": "Improvements._12_WhereVsFirstOrDefaultPredicate.Bad.WhereThenFirstOrDefaultExample",
+    "Good": "Improvements._12_WhereVsFirstOrDefaultPredicate.Good.FirstOrDefaultWithPredicateExample"
+  },
+  {
+    "Id": "13",
+    "Title": "Avoid .ToList().Any() – Use Any(predicate)",
+    "Bad": "Improvements._13_ToListBeforeAny.Bad.ToListBeforeAnyExample",
+    "Good": "Improvements._13_ToListBeforeAny.Good.DirectAnyCheckExample"
+  },
+  {
+    "Id": "14",
+    "Title": "Avoid Boxing with Value Types in Collections",
+    "Bad": "Improvements._14_BoxingWithValueTypes.Bad.BoxingWithArrayList",
+    "Good": "Improvements._14_BoxingWithValueTypes.Good.BoxingWithGenericList"
+  },
+  {
+    "Id": "15",
+    "Title": "Prefer IEnumerable<T> Over List<T> for Read-Only Access",
+    "Bad": "Improvements._15_UseIEnumerableInsteadOfList.Bad.ReturnsListDirectly",
+    "Good": "Improvements._15_UseIEnumerableInsteadOfList.Good.ReturnsIEnumerable"
+  },
+  {
+    "Id": "16",
+    "Title": "Use TryGetValue Instead of ContainsKey + Indexer",
+    "Bad": "Improvements._16_TryGetValueInsteadOfContainsKey.Bad.ContainsKeyThenAccess",
+    "Good": "Improvements._16_TryGetValueInsteadOfContainsKey.Good.TryGetValueAccess"
+  },
+  {
+    "Id": "17",
+    "Title": "Use string.IsNullOrWhiteSpace Instead of Manual Null/Empty Check",
+    "Bad": "Improvements._17_UseIsNullOrWhiteSpace.Bad.ManualNullEmptyCheck",
+    "Good": "Improvements._17_UseIsNullOrWhiteSpace.Good.IsNullOrWhiteSpaceCheck"
+  },
+  {
+    "Id": "18",
+    "Title": "Avoid Unnecessary async/await",
+    "Bad": "Improvements._18_AvoidUnnecessaryAsync.Bad.UnnecessaryAsyncAwait",
+    "Good": "Improvements._18_AvoidUnnecessaryAsync.Good.ReturnTaskDirectly"
+  },
+  {
+    "Id": "19",
+    "Title": "Use var When the Type is Obvious",
+    "Bad": "Improvements._19_UseVarWhenObvious.Bad.ExplicitTypeWhenObvious",
+    "Good": "Improvements._19_UseVarWhenObvious.Good.UseVarForClarity"
+  },
+  {
+    "Id": "20",
+    "Title": "Avoid Empty Catch Blocks",
+    "Bad": "Improvements._20_AvoidEmptyCatchBlocks.Bad.SilentCatchBlock",
+    "Good": "Improvements._20_AvoidEmptyCatchBlocks.Good.CatchWithLogging"
   }
+
 ]

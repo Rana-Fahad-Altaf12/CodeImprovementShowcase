@@ -118,6 +118,187 @@
     "Title": "Avoid Empty Catch Blocks",
     "Bad": "Improvements._20_AvoidEmptyCatchBlocks.Bad.SilentCatchBlock",
     "Good": "Improvements._20_AvoidEmptyCatchBlocks.Good.CatchWithLogging"
+  },
+  {
+    "Id": "21",
+    "Title": "Avoid Unnecessary Boxing",
+    "Bad": "Improvements._21_AvoidUnnecessaryBoxing.Bad.BoxedInteger",
+    "Good": "Improvements._21_AvoidUnnecessaryBoxing.Good.DirectIntegerUsage"
+  },
+  {
+    "Id": "22",
+    "Title": "Avoid Large Object Heap",
+    "Bad": "Improvements._22_AvoidLargeObjectHeap.Bad.UsingLargeArray",
+    "Good": "Improvements._22_AvoidLargeObjectHeap.Good.UseArrayPooling"
+  },
+  {
+    "Id": "23",
+    "Title": "Use Span for Slicing",
+    "Bad": "Improvements._23_UseSpanForSlicing.Bad.StringSlicingWithSubstring",
+    "Good": "Improvements._23_UseSpanForSlicing.Good.StringSlicingWithSpan"
+  },
+  {
+    "Id": "24",
+    "Title": "Minimize Allocations in Loops",
+    "Bad": "Improvements._24_MinimizeAllocationsInLoops.Bad.AllocateInsideLoop",
+    "Good": "Improvements._24_MinimizeAllocationsInLoops.Good.AllocateOnce"
+  },
+  {
+    "Id": "25",
+    "Title": "Use 'as' Instead of Cast",
+    "Bad": "Improvements._25_UseAsInsteadOfCast.Bad.DirectCastExample",
+    "Good": "Improvements._25_UseAsInsteadOfCast.Good.UseAsExample"
+  },
+  {
+    "Id": "26",
+    "Title": "Avoid Closure Pitfalls",
+    "Bad": "Improvements._26_AvoidClosurePitfalls.Bad.ClosureIssue",
+    "Good": "Improvements._26_AvoidClosurePitfalls.Good.CorrectedClosure"
+  },
+  {
+    "Id": "27",
+    "Title": "Defer Execution Only When Needed",
+    "Bad": "Improvements._27_DeferExecutionOnlyWhenNeeded.Bad.UnexpectedDeferredExecution",
+    "Good": "Improvements._27_DeferExecutionOnlyWhenNeeded.Good.EagerExecution"
+  },
+  {
+    "Id": "28",
+    "Title": "Avoid Excessive Logging",
+    "Bad": "Improvements._28_AvoidExcessiveLogging.Bad.TooMuchLogging",
+    "Good": "Improvements._28_AvoidExcessiveLogging.Good.EssentialLoggingOnly"
+  },
+  {
+    "Id": "29",
+    "Title": "Use CancellationTokens",
+    "Bad": "Improvements._29_UseCancellationTokens.Bad.MissingCancellation",
+    "Good": "Improvements._29_UseCancellationTokens.Good.UsesCancellationToken"
+  },
+  {
+    "Id": "30",
+    "Title": "Avoid Thread.Sleep",
+    "Bad": "Improvements._30_AvoidThreadSleep.Bad.UsingThreadSleep",
+    "Good": "Improvements._30_AvoidThreadSleep.Good.UseTaskDelay"
+  },
+  {
+    "Id": "31",
+    "Title": "Attribute routing vs conventional routing",
+    "Bad": "Improvements._31_AttributeRoutingVsConventional.Bad.ConventionalRoutingExample",
+    "Good": "Improvements._31_AttributeRoutingVsConventional.Good.AttributeRoutingExample"
+  },
+  {
+    "Id": "32",
+    "Title": "Hardcoded URLs vs IUrlHelper",
+    "Bad": "Improvements._32_HardcodedUrlsVsUrlHelper.Bad.HardcodedUrlExample",
+    "Good": "Improvements._32_HardcodedUrlsVsUrlHelper.Good.UrlHelperExample"
+  },
+  {
+    "Id": "33",
+    "Title": "Using query params vs route params",
+    "Bad": "Improvements._33_QueryParamsVsRouteParams.Bad.QueryParameterUsage",
+    "Good": "Improvements._33_QueryParamsVsRouteParams.Good.RouteParameterUsage"
+  },
+  {
+    "Id": "34",
+    "Title": "HTTP GET vs POST misuse",
+    "Bad": "Improvements._34_HttpGetVsPostMisuse.Bad.GetUsedForMutation",
+    "Good": "Improvements._34_HttpGetVsPostMisuse.Good.PostUsedForMutation"
+  },
+  {
+    "Id": "35",
+    "Title": "DTOs vs Entity exposure in APIs",
+    "Bad": "Improvements._35_DtosVsEntityExposure.Bad.EntityReturnedDirectly",
+    "Good": "Improvements._35_DtosVsEntityExposure.Good.DtoReturnedSafely"
+  },
+  {
+    "Id": "36",
+    "Title": "Using nullable reference types in APIs",
+    "Bad": "Improvements._36_NullableReferenceTypesInApi.Bad.NullableWarningsIgnored",
+    "Good": "Improvements._36_NullableReferenceTypesInApi.Good.NullableTypesUsedProperly"
+  },
+  {
+    "Id": "37",
+    "Title": "Validation in controller vs middleware/filter",
+    "Bad": "Improvements._37_ValidationInControllerVsFilter.Bad.InlineValidationInController",
+    "Good": "Improvements._37_ValidationInControllerVsFilter.Good.CentralizedValidationFilter"
+  },
+  {
+    "Id": "38",
+    "Title": "Versioning via URL vs header",
+    "Bad": "Improvements._38_VersioningViaUrlVsHeader.Bad.UrlVersioningExample",
+    "Good": "Improvements._38_VersioningViaUrlVsHeader.Good.HeaderVersioningExample"
+  },
+  {
+    "Id": "39",
+    "Title": "Returning IActionResult vs generic types",
+    "Bad": "Improvements._39_IActionResultVsGenericTypes.Bad.UsesGenericReturn",
+    "Good": "Improvements._39_IActionResultVsGenericTypes.Good.UsesIActionResult"
+  },
+  {
+    "Id": "40",
+    "Title": "Overloaded endpoints with same route",
+    "Bad": "Improvements._40_OverloadedEndpointsSameRoute.Bad.OverloadedSameRoute",
+    "Good": "Improvements._40_OverloadedEndpointsSameRoute.Good.DistinctRoutesForActions"
+  },
+  {
+    "Id": "41",
+    "Title": "Repository pattern vs direct DbContext",
+    "Bad": "Improvements._41_RepositoryVsDbContext.Bad.RepositoryUsage",
+    "Good": "Improvements._41_RepositoryVsDbContext.Good.RepositoryUsage"
+  },
+  {
+    "Id": "42",
+    "Title": "Unit of Work implementation",
+    "Bad": "Improvements._42_UnitOfWorkImplementation.Bad.DirectDbContextCalls",
+    "Good": "Improvements._42_UnitOfWorkImplementation.Good.UnitOfWorkUsage"
+  },
+  {
+    "Id": "43",
+    "Title": "Specification pattern",
+    "Bad": "Improvements._43_SpecificationPattern.Bad.HardcodedFilterLogic",
+    "Good": "Improvements._43_SpecificationPattern.Good.SpecificationPatternUsage"
+  },
+  {
+    "Id": "44",
+    "Title": "Domain services vs application services",
+    "Bad": "Improvements._44_DomainVsApplicationServices.Bad.BusinessLogicInApplicationService",
+    "Good": "Improvements._44_DomainVsApplicationServices.Good.ProperDomainServiceUse"
+  },
+  {
+    "Id": "45",
+    "Title": "Violating SRP in services",
+    "Bad": "Improvements._45_ViolatingSRPInServices.Bad.FatServiceWithMultipleResponsibilities",
+    "Good": "Improvements._45_ViolatingSRPInServices.Good.SplitResponsibilitiesIntoServices"
+  },
+  {
+    "Id": "46",
+    "Title": "Fat controllers vs thin controllers",
+    "Bad": "Improvements._46_FatVsThinControllers.Bad.FatController",
+    "Good": "Improvements._46_FatVsThinControllers.Good.ThinControllerWithService"
+  },
+  {
+    "Id": "47",
+    "Title": "Clean architecture layering mistake",
+    "Bad": "Improvements._47_CleanArchitectureLayeringMistake.Bad.UiCallsRepositoryDirectly",
+    "Good": "Improvements._47_CleanArchitectureLayeringMistake.Good.UiUsesApplicationLayer"
+  },
+  {
+    "Id": "48",
+    "Title": "Breaking Law of Demeter",
+    "Bad": "Improvements._48_BreakingLawOfDemeter.Bad.TightlyCoupledChain",
+    "Good": "Improvements._48_BreakingLawOfDemeter.Good.TellDontAskPrinciple"
+  },
+  {
+    "Id": "49",
+    "Title": "Poor modular boundaries in monoliths",
+    "Bad": "Improvements._49_PoorModularBoundaries.Bad.TightlyCoupledModules",
+    "Good": "Improvements._49_PoorModularBoundaries.Good.DecoupledModulesWithInterfaces"
+  },
+  {
+    "Id": "50",
+    "Title": "Service per feature vs service per entity",
+    "Bad": "Improvements._50_ServicePerFeatureVsEntity.Bad.ServicePerEntityApproach",
+    "Good": "Improvements._50_ServicePerFeatureVsEntity.Good.ServicePerFeatureApproach"
   }
+
 
 ]

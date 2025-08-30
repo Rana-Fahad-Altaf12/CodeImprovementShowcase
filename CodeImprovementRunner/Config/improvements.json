@@ -298,7 +298,186 @@
     "Title": "Service per feature vs service per entity",
     "Bad": "Improvements._50_ServicePerFeatureVsEntity.Bad.ServicePerEntityApproach",
     "Good": "Improvements._50_ServicePerFeatureVsEntity.Good.ServicePerFeatureApproach"
+  },
+  {
+    "Id": "51",
+    "Title": "Swallowing exceptions silently",
+    "Bad": "Improvements._51_SwallowingExceptions.Bad.SilentException",
+    "Good": "Improvements._51_SwallowingExceptions.Good.HandledWithLogging"
+  },
+  {
+    "Id": "52",
+    "Title": "Logging sensitive data",
+    "Bad": "Improvements._52_LoggingSensitiveData.Bad.LoggingSensitiveInfo",
+    "Good": "Improvements._52_LoggingSensitiveData.Good.SecureLogging"
+  },
+  {
+    "Id": "53",
+    "Title": "Overusing try/catch blocks",
+    "Bad": "Improvements._53_OverusingTryCatch.Bad.OverusingTryCatch",
+    "Good": "Improvements._53_OverusingTryCatch.Good.MinimalTryCatch"
+  },
+  {
+    "Id": "54",
+    "Title": "Not using ILogger<T>",
+    "Bad": "Improvements._54_NotUsingILogger.Bad.ConsoleLogging",
+    "Good": "Improvements._54_NotUsingILogger.Good.StructuredLogging"
+  },
+  {
+    "Id": "55",
+    "Title": "Rethrowing exceptions incorrectly",
+    "Bad": "Improvements._55_RethrowingExceptions.Bad.RethrowWithEx",
+    "Good": "Improvements._55_RethrowingExceptions.Good.RethrowWithThrow"
+  },
+  {
+    "Id": "56",
+    "Title": "Exceptions for flow control",
+    "Bad": "Improvements._56_ExceptionsForFlowControl.Bad.ExceptionsAsFlowControl",
+    "Good": "Improvements._56_ExceptionsForFlowControl.Good.ProperFlowControl"
+  },
+  {
+    "Id": "57",
+    "Title": "Ignoring task exceptions (unobserved)",
+    "Bad": "Improvements._57_IgnoringTaskExceptions.Bad.UnobservedTask",
+    "Good": "Improvements._57_IgnoringTaskExceptions.Good.ObservedTask"
+  },
+  {
+    "Id": "58",
+    "Title": "Logging inside catch vs bubbling up",
+    "Bad": "Improvements._58_LoggingInsideCatch.Bad.LogInsideCatch",
+    "Good": "Improvements._58_LoggingInsideCatch.Good.BubbleUpLogging"
+  },
+  {
+    "Id": "59",
+    "Title": "Global error handler vs scattered try-catch",
+    "Bad": "Improvements._59_GlobalErrorHandlerVsScattered.Bad.ScatteredTryCatch",
+    "Good": "Improvements._59_GlobalErrorHandlerVsScattered.Good.GlobalErrorHandler"
+  },
+  {
+    "Id": "60",
+    "Title": "Invalid model state handling",
+    "Bad": "Improvements._60_InvalidModelStateHandling.Bad.IgnoringModelState",
+    "Good": "Improvements._60_InvalidModelStateHandling.Good.ValidateModelState"
+  },
+  {
+    "Id": "61",
+    "Title": "Attribute routing vs conventional routing",
+    "Bad": "Improvements._61_AttributeRoutingVsConventionalRouting.Bad.ConventionalRouting",
+    "Good": "Improvements._61_AttributeRoutingVsConventionalRouting.Good.AttributeRouting"
+  },
+  {
+    "Id": "62",
+    "Title": "Hardcoded URLs vs IUrlHelper",
+    "Bad": "Improvements._62_HardcodedUrlsVsIUrlHelper.Bad.HardcodedUrls",
+    "Good": "Improvements._62_HardcodedUrlsVsIUrlHelper.Good.UrlHelperUsage"
+  },
+  {
+    "Id": "63",
+    "Title": "Using Query Params vs Route Params",
+    "Bad": "Improvements._63_QueryVsRouteParams.Bad.BadQueryParams",
+    "Good": "Improvements._63_QueryVsRouteParams.Good.GoodRouteParams"
+  },
+  {
+    "Id": "64",
+    "Title": "HTTP GET vs POST misuse",
+    "Bad": "Improvements._64_HttpGetVsPost.Bad.BadHttpGetForUpdate",
+    "Good": "Improvements._64_HttpGetVsPost.Good.GoodHttpPostForUpdate"
+  },
+  {
+    "Id": "65",
+    "Title": "DTOs vs Entity exposure in APIs",
+    "Bad": "Improvements._65_DtosVsEntityExposure.Bad.BadExposeEntity",
+    "Good": "Improvements._65_DtosVsEntityExposure.Good.GoodUseDto"
+  },
+  {
+    "Id": "66",
+    "Title": "Using nullable reference types in APIs",
+    "Bad": "Improvements._66_NullableReferenceTypes.Bad.BadNullableHandling",
+    "Good": "Improvements._66_NullableReferenceTypes.Good.GoodNullableHandling"
+  },
+  {
+    "Id": "67",
+    "Title": "Validation in controller vs middleware/filter",
+    "Bad": "Improvements._67_ValidationLocation.Bad.BadValidation",
+    "Good": "Improvements._67_ValidationLocation.Good.GoodValidation"
+  },
+  {
+    "Id": "68",
+    "Title": "Versioning via URL vs header",
+    "Bad": "Improvements._68_Versioning.Bad.BadVersioning",
+    "Good": "Improvements._68_Versioning.Good.GoodVersioning"
+  },
+  {
+    "Id": "69",
+    "Title": "Returning IActionResult vs generic types",
+    "Bad": "Improvements._69_ReturningTypes.Bad.BadReturn",
+    "Good": "Improvements._69_ReturningTypes.Good.GoodReturn"
+  },
+  {
+    "Id": "70",
+    "Title": "Overloaded endpoints with same route",
+    "Bad": "Improvements._70_OverloadedRoutes.Bad.BadOverload",
+    "Good": "Improvements._70_OverloadedRoutes.Good.GoodOverload"
+  },
+  {
+    "Id": "71",
+    "Title": "Repository pattern vs direct DbContext",
+    "Bad": "Improvements._71_RepositoryVsDirectDbContext.Bad.DirectDbContextUsage",
+    "Good": "Improvements._71_RepositoryVsDirectDbContext.Good.RepositoryPatternUsage"
+  },
+  {
+    "Id": "72",
+    "Title": "Unit of Work implementation",
+    "Bad": "Improvements._72_UnitOfWorkImplementation.Bad.DirectRepositoryUsage",
+    "Good": "Improvements._72_UnitOfWorkImplementation.Good.UnitOfWorkDemo"
+  },
+  {
+    "Id": "73",
+    "Title": "Specification pattern",
+    "Bad": "Improvements._73_SpecificationPattern.Bad.InlineQueryLogic",
+    "Good": "Improvements._73_SpecificationPattern.Good.SpecificationPatternUsage"
+  },
+  {
+    "Id": "74",
+    "Title": "Domain services vs application services",
+    "Bad": "Improvements._74_DomainServicesVsApplicationServices.Bad.BusinessLogicInApplicationService",
+    "Good": "Improvements._74_DomainServicesVsApplicationServices.Good.ProperDomainService"
+  },
+  {
+    "Id": "75",
+    "Title": "Violating SRP in services",
+    "Bad": "Improvements._75_ViolatingSRPInServices.Bad.FatService",
+    "Good": "Improvements._75_ViolatingSRPInServices.Good.SRPCompliantService"
+  },
+  {
+    "Id": "76",
+    "Title": "Fat controllers vs thin controllers",
+    "Bad": "Improvements._76_FatControllersVsThinControllers.Bad.FatController",
+    "Good": "Improvements._76_FatControllersVsThinControllers.Good.ThinController"
+  },
+  {
+    "Id": "77",
+    "Title": "Clean architecture layering mistake",
+    "Bad": "Improvements._77_CleanArchitectureLayeringMistake.Bad.LayerViolation",
+    "Good": "Improvements._77_CleanArchitectureLayeringMistake.Good.ProperLayering"
+  },
+  {
+    "Id": "78",
+    "Title": "Breaking Law of Demeter",
+    "Bad": "Improvements._78_BreakingLawOfDemeter.Bad.LawOfDemeterViolation",
+    "Good": "Improvements._78_BreakingLawOfDemeter.Good.LawOfDemeterCompliant"
+  },
+  {
+    "Id": "79",
+    "Title": "Poor modular boundaries in monoliths",
+    "Bad": "Improvements._79_PoorModularBoundariesInMonoliths.Bad.TightlyCoupledModules",
+    "Good": "Improvements._79_PoorModularBoundariesInMonoliths.Good.WellDefinedModules"
+  },
+  {
+    "Id": "80",
+    "Title": "Service per feature vs service per entity",
+    "Bad": "Improvements._80_ServicePerFeatureVsServicePerEntity.Bad.ServicePerEntity",
+    "Good": "Improvements._80_ServicePerFeatureVsServicePerEntity.Good.ServicePerFeature"
   }
-
 
 ]

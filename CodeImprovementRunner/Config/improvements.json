@@ -478,6 +478,67 @@
     "Title": "Service per feature vs service per entity",
     "Bad": "Improvements._80_ServicePerFeatureVsServicePerEntity.Bad.ServicePerEntity",
     "Good": "Improvements._80_ServicePerFeatureVsServicePerEntity.Good.ServicePerFeature"
+  },
+  {
+    "Id": "81",
+    "Title": "Serializing entire objects vs DTOs",
+    "Bad": "Improvements._81_SerializeObjectsVsDTOs.Bad.SerializeEntireObjects",
+    "Good": "Improvements._81_SerializeObjectsVsDTOs.Good.UseDTOsForSerialization"
+  },
+  {
+    "Id": "82",
+    "Title": "Using File.ReadAllText for large files",
+    "Bad": "Improvements._82_FileReadAllTextForLargeFiles.Bad.ReadAllTextLargeFile",
+    "Good": "Improvements._82_FileReadAllTextForLargeFiles.Good.ReadFileStreamEfficiently"
+  },
+  {
+    "Id": "83",
+    "Title": "Storing config in code vs appsettings",
+    "Bad": "Improvements._83_ConfigInCodeVsAppSettings.Bad.HardcodedConfig",
+    "Good": "Improvements._83_ConfigInCodeVsAppSettings.Good.UseAppSettings"
+  },
+  {
+    "Id": "84",
+    "Title": "Accessing config directly in deep layers",
+    "Bad": "Improvements._84_AccessConfigDirectlyInDeepLayers.Bad.DirectConfigAccess",
+    "Good": "Improvements._84_AccessConfigDirectlyInDeepLayers.Good.InjectConfigViaDI"
+  },
+  {
+    "Id": "85",
+    "Title": "Using dynamic with JSON deserialize",
+    "Bad": "Improvements._85_DynamicJsonDeserialization.Bad.DynamicJsonUsage",
+    "Good": "Improvements._85_DynamicJsonDeserialization.Good.StronglyTypedDeserialization"
+  },
+  {
+    "Id": "86",
+    "Title": "NewtonsoftVsSystemTextJson",
+    "Bad": "Improvements._86_NewtonsoftVsSystemTextJson.Bad.MixingJsonLibraries",
+    "Good": "Improvements._86_NewtonsoftVsSystemTextJson.Good.UseSystemTextJsonConsistently"
+  },
+  {
+    "Id": "87",
+    "Title": "XmlVsJson",
+    "Bad": "Improvements._87_XmlVsJson.Bad.UseXml",
+    "Good": "Improvements._87_XmlVsJson.Good.UseJsonWhenApplicable"
+  },
+  {
+    "Id": "88",
+    "Title": "BinaryFormatterUsage",
+    "Bad": "Improvements._88_BinaryFormatterUsage.Bad.BinaryFormatter",
+    "Good": "Improvements._88_BinaryFormatterUsage.Good.SafeSerialization"
+  },
+  {
+    "Id": "89",
+    "Title": "ConfigReloadWithoutIOptionsSnapshot",
+    "Bad": "Improvements._89_ConfigReloadWithoutIOptionsSnapshot.Bad.ManualConfigReload",
+    "Good": "Improvements._89_ConfigReloadWithoutIOptionsSnapshot.Good.UseIOptionsSnapshotDemo"
+  },
+  {
+    "Id": "90",
+    "Title": "TempFilesWithoutCleanup",
+    "Bad": "Improvements._90_TempFilesWithoutCleanup.Bad.CreateTempWithoutCleanup",
+    "Good": "Improvements._90_TempFilesWithoutCleanup.Good.TempFileWithCleanup"
   }
+
 
 ]
